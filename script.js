@@ -65,3 +65,16 @@ gsap.from('.page3 .right h1,p', {
         
     }
 })
+
+
+
+
+let pointer = document.querySelector(".pointer")
+
+
+window.addEventListener("mousemove", function (a) {
+    gsap.to(pointer, {
+        x: a.clientX,
+        y: a.clientY,
+    })
+})
